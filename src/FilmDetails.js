@@ -10,21 +10,19 @@ const FilmDetails = (props) => {
 		return (
 			<div className="film-details">
          		<h1 className="section-title">DETAILS</h1>			
-
-			<div className="film-detail is-hydrated">
- 			 <figure className="film-backdrop">
-    			<img src={backdropUrl} alt="" />
-    			<h1 className="film-title">{props.films.title}</h1>
- 				</figure>
-
- 			 <div className="film-meta">
-    			<h2 className="film-tagline">{props.films.tagline}</h2>
-    			<p className="film-detail-overview">
-      				<img src={posterUrl} className="film-detail-poster" alt={props.films.title} />
-      				{props.films.overview}
-   		 		</p>
-  			</div>
-			</div>
+				<div className="film-detail is-hydrated">
+	 				<figure className="film-backdrop">
+	    				<img src={backdropUrl} alt="" />
+	    				<h1 className="film-title">{props.films.title}</h1>
+	 				</figure>
+	 			 	<div className="film-meta">
+	    				<h2 className="film-tagline">{props.films.tagline}</h2>
+	    				<p className="film-detail-overview">
+	      					<img src={posterUrl} className="film-detail-poster" alt={props.films.title} />
+	      					{props.films.overview}
+	   		 			</p>
+	  				</div>
+				</div>
 			</div>
 		)
 	} else {

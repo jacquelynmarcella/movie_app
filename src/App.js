@@ -14,7 +14,7 @@ class App extends Component {
 
 	handleDetailsClick = (event) => {
 		console.log(TMDB);
-		const url = `https://api.themoviedb.org/3/movie/${event}?api_key=ENVNOTWORKINGSONEEDTOPASTEIN&append_to_response=videos,images&language=en`
+		const url = `https://api.themoviedb.org/3/movie/${event}?api_key=${TMDB.api_key}&append_to_response=videos,images&language=en`
 		fetch(url).then(response => {
 			response.json().then(data => {
 				console.log(data);
